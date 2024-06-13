@@ -1,0 +1,9 @@
+distrax==0.1.5
+jax==0.4.20
+jaxlib==0.4.20
+matplotlib==3.8.1
+numpy==1.22.4
+importlib-metadata==6.8.0
+importlib-resources==6.1.1
+jupyter==1.0.0
+jupyterthemes==0.20.0
