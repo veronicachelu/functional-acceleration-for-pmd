@@ -107,7 +107,7 @@ def plot_policy_path(mdp, data, ax=None, cmap=None, plot_lines=True,
                     elif policy_label == "policy_tp1":
                         pol = r'$\pi_{T+1}$'
                     else:
-                        pol = r'$\breve{\pi}_{T+1}$'
+                        pol = r'$\tilde{\pi}_{T+1}$'
                     ax.text(vpis[i, 0]-0.6, vpis[i, 1]+0.2, pol,color=colors[i],fontsize=fontsize)
                 if i == 0:
                     if policy_label == "policy_t":
@@ -176,7 +176,7 @@ def plot_vector_path(mdp, data, ax=None, cmaps=None, ext=False,
                                   headwidth=arrowsize, headlength=arrowsize,
                                   headaxislength=arrowsize, alpha=alphas[i],
                                   zorder=zorder)
-                    extra_label = r'$[\breve{\pi}_{t}]$' if add_extra_label else r''
+                    extra_label = r'$[\tilde{\pi}_{t}]$' if add_extra_label else r''
                     ax.scatter([], [], marker=r'$\nearrow$',
                                color=colors[0][int(len(colors)/2)], s=2,
                                label=(label+ extra_label if label is not None else None))
